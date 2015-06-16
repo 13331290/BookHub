@@ -44,6 +44,10 @@ Router.route( '/user/:id', function() {
 	this.render('user');
 })
 
+Router.route( '/read/:id/:chapter', function() {
+	this.render('read');
+})
+
 Router.route( '/authorEdit/:book_id/:chapter', function() {
 	this.render('authorEdit');
 })
@@ -51,7 +55,6 @@ Router.route( '/authorEdit/:book_id/:chapter', function() {
 Router.map( function() {
 	this.route('home');
 	this.route('book');
-	this.route('read');
 	this.route('bookIntro');
 	this.route('sign');
 })
